@@ -1,14 +1,14 @@
-# Use the latest stable n8n release
-FROM n8nio/n8n:1.107.2
+# Stable official image
+FROM docker.io/n8nio/n8n:1.107.2
 
-# Set working directory
-WORKDIR /data
+# Recommended working dir for the image
+WORKDIR /home/node
 
-# Create a non-root user for security
+# Run as non-root (already set in the image, but safe)
 USER node
 
-# Expose default n8n port
+# n8n listens here
 EXPOSE 5678
 
 # Start n8n
-CMD ["n8n"]
+CMD ["n8n", "start"]
