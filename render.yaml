@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: n8n
+    env: node
+    repo: https://github.com/pranavkamte/n8n
+    branch: master
+    plan: free
+    envVars:
+      - key: N8N_VERSION
+        value: 1.49.2
