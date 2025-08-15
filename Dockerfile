@@ -1,5 +1,5 @@
-# Use official n8n image
-FROM n8nio/n8n:1.49.2
+# Use the latest stable n8n release
+FROM n8nio/n8n:1.107.2
 
 # Set working directory
 WORKDIR /data
